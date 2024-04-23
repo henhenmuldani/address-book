@@ -23,7 +23,8 @@ function addContact(event) {
   localStorage.setItem("contacts", JSON.stringify(contactsData));
 
   // redirect ke halaman utama
-  window.location.href = "/src/index.html";
+  // window.location.href = "/src/index.html";
+  window.location.href = "/";
 }
 
 const addContactFormElement = document.getElementById("add-contact-form");
