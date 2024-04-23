@@ -22,7 +22,7 @@ function addContact(event) {
 
   // redirect ke halaman utama
   // window.location.href = "/src/index.html";
-  window.location.href = "/";
+  window.location.href = "https://address-book.henhenmuldani.com";
 }
 
 const addContactFormElement = document.getElementById("add-contact-form");
