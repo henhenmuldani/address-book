@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <title>Document</title>
+  </head>
+  <body class="max-w-sm mx-auto">
+    <main class="p-4">
+      <form action="" id="add-contact-form" onsubmit="addContact(event)">
+        <div class="mb-4">
+          <label
+            for="first-name"
+            class="block mb-2 text-sm font-bold text-gray-700"
+            >First Name</label
+          >
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="last-name"
+            class="block mb-2 text-sm font-bold text-gray-700"
+            >Last Name</label
+          >
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="phone-number"
+            class="block mb-2 text-sm font-bold text-gray-700"
+            >Phone Number</label
+          >
+          <input
+            type="text"
+            id="phone-number"
+            name="phone-number"
+            class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="mb-4">
+          <button
+            type="submit"
+            class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
