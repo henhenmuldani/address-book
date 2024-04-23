@@ -1,11 +1,9 @@
 function addContact(event) {
   event.preventDefault();
 
-  const formData = new FormData(event.target);
-
-  const firstName = formData.get("first-name");
-  const lastName = formData.get("last-name");
-  const phoneNumber = formData.get("phone-number");
+  const firstName = document.getElementById("first-name").value;
+  const lastName = document.getElementById("last-name").value;
+  const phoneNumber = document.getElementById("phone-number").value;
 
   const newContact = {
     firstName: firstName,
