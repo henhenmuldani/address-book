@@ -21,8 +21,8 @@ function addContact(event) {
   localStorage.setItem("contacts", JSON.stringify(contactsData));
 
   // redirect ke halaman utama
-  // window.location.href = "/src/index.html";
-  window.location.href = "https://address-book.henhenmuldani.com";
+  window.location.href = "../index.html";
+  // window.location.replace("https://address-book.henhenmuldani.com");
 }
 
 const addContactFormElement = document.getElementById("add-contact-form");
