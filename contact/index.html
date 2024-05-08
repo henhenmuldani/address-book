@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="max-w-sm mx-auto">
+    <nav class="bg-blue-500 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <button onclick="history.back()" class="text-white flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 mr-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Back
+        </button>
+        <div>
+          <p class="text-white text-lg font-bold">Address Book</p>
+        </div>
+      </div>
+    </nav>
+
+    <main class="text-center items-center flex flex-col p-4">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        enable-background="new 0 0 48 48"
+        class="w-48 h-48 fill-current"
+        viewBox="0 0 48 48"
+        id="profile"
+      >
+        <path
+          d="M24,6C14.1,6,6,14.1,6,24s8.1,18,18,18s18-8.1,18-18S33.9,6,24,6z M24,13c2.2,0,4,1.8,4,4c0,2.2-1.8,4-4,4c-2.2,0-4-1.8-4-4C20,14.8,21.8,13,24,13z M14,34c0-5.5,4.5-10,10-10c5.5,0,10,4.5,10,10H14z"
+        ></path>
+      </svg>
+      <section class="w-full" id="contact-by-id"></section>
+      </div>
+
+      <button
+        id="delete-button"
+        class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full m-4"
+      >
+        Delete
+      </button>
+    </main>
+
+    <script src="/contact/index.js"></script>
+  </body>
+</html>

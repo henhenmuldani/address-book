@@ -3,11 +3,13 @@ function addContact(event) {
 
   const firstName = document.getElementById("first-name").value;
   const lastName = document.getElementById("last-name").value;
+  const email = document.getElementById("email").value;
   const phoneNumber = document.getElementById("phone-number").value;
 
   const newContact = {
-    firstName: firstName,
-    lastName: lastName,
+    id: crypto.randomUUID(),
+    fullName: `${firstName} ${lastName}`,
+    email: email,
     phoneNumber: phoneNumber,
   };
 
@@ -21,8 +23,7 @@ function addContact(event) {
   localStorage.setItem("contacts", JSON.stringify(contactsData));
 
   // redirect ke halaman utama
-  window.location.href = "../index.html";
-  // window.location.replace("https://address-book.henhenmuldani.com");
+  window.location.href = "/index.html";
 }
 
 const addContactFormElement = document.getElementById("add-contact-form");
